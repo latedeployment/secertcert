@@ -65,6 +65,7 @@ CHUNK_HEADER_SIZE = 4  # 2 bytes sequence + 2 bytes total
 CHUNK_PAYLOAD_SIZE = CHUNK_USABLE_BYTES - CHUNK_HEADER_SIZE  # 11 bytes per cert
 
 # Encryption constants
+# Both reader and writer must use the same KDF_SALT and KDF_ITERATIONS.
 KDF_SALT = b"secertcert-v1-kdf-salt"
 KDF_ITERATIONS = 100_000
 

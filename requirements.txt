@@ -1,4 +1,2 @@
 cryptography>=41.0.0
-
-# Dev dependencies (for running tests)
 pytest>=7.0.0
